@@ -395,3 +395,17 @@ footer{
       color: #c0a683;
       font-style: oblique;
   }
+  .azul{
+      background-color: #ece288;
+      color: brown;
+      font-size: 25px;
+      text-align: center;
+      text-transform: capitalize;
+      -webkit-transition: 1s linear;
+      transition: 1s linear;
+
+  }
+  .azul:hover{
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
+  }
