@@ -386,16 +386,16 @@ footer{
     -webkit-transition: 1s linear;
     transition: 1s linear;
   }
-  .caja3:hover{
+.caja3:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
   }
   /*------Prueba de Git-----*/
-  .prueba{
+.prueba{
       color: #c0a683;
       font-style: oblique;
   }
-  .azul{
+.azul{
       background-color: #ece288;
       color: brown;
       font-size: 25px;
@@ -405,7 +405,7 @@ footer{
       transition: 1s linear;
 
   }
-  .azul:hover{
+.azul:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
   }
