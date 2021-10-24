@@ -386,18 +386,21 @@ footer{
     -webkit-transition: 1s linear;
     transition: 1s linear;
   }
-  .caja3:hover{
+.caja3:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
   }
   /*------Prueba de Git-----*/
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+=======
+>>>>>>> rama_estilos
 .prueba{
       color: #c0a683;
       font-style: oblique;
-  }
+}
 .azul{
       background-color: #ece288;
       color: brown;
@@ -407,9 +410,9 @@ footer{
       -webkit-transition: 1s linear;
       transition: 1s linear;
 
-  }
+}
 .azul:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
-  }
+}
 >>>>>>> rama_estilos
