@@ -1,77 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-	<title>Madart</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <title>Madart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
 </head>
-<body class="beige"> 
-    <header class="header-banner">
-        <nav class="header__navbar--principal">
-            <ul>
-                <li><a class="boton" href="index.html">Home</a></li>
-                <li><a class="boton" href="about.html">Sobre nosotros</a></li>
-                <li><a class="boton" href="galeria.html">Galeria</a></li>
-                <li><a class="boton" href="contacto.html">Contacto</a></li>
-                <li><a class="boton" href="port.html">Enlaces</a></li>
-                <li><a class="boton" href="maps.html">Mapa</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h2>Carpinteria Madart</h2>
-    <br>
-    <form action="">
-        <fieldset> <!-- Inicio del formulario -->
-            <legend>Formulario de consulta</legend>
-            <label for="name">Nombre: </label>
-            <input type="text" id="name" placeholder="Ingrese su nombre" required autofocus="autofocus">
-            <br>
-            <label for="apellido">Apellido: </label>
-            <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
-            <br>
-            <!-- Inicio de cuadro de consultas -->
-            <label for="consulta">Consulta: </label>
-            <br>
-            <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="300" placeholder="Ingrese su consulta"></textarea>
-            <!-- Cierre de cuadro de consultas -->
-            <br>
-            <label for="">Seleccione su país: </label>
-            <br>
-            <label><input type="checkbox">Argentina</label>
-            <br>
-            <label><input type="checkbox">Uruguay</label>
-            <br>
-            <label><input type="checkbox">Chile</label>
-            <br>
-            <label><input type="checkbox">Brasil</label>
-            <br>
 
+<body class="beige">
+  <header class="header-banner">
+    <nav class="header__navbar--principal">
+      <ul>
+        <li><a class="boton" href="index.html">Home</a></li>
+        <li><a class="boton" href="about.html">Sobre nosotros</a></li>
+        <li><a class="boton" href="galeria.html">Galeria</a></li>
+        <li><a class="boton" href="contacto.html">Contacto</a></li>
+        <li><a class="boton" href="port.html">Enlaces</a></li>
+        <li><a class="boton" href="maps.html">Mapa</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Carpinteria Madart</h2>
+  <br>
 
-            <label for="">En el caso de ser de Argentina, seleccione su provincia: </label>
+  <!-- Inicio del formulario  -->
+  <section class="container bg-light p-5">
 
-            <select name="prov" id="prov"> <!-- Inicio de menu desplegable -->
-                <option value=" ">Provincia</option>
-                <option value="bsas">Buenos Aires</option>
-                <option value="cba">Córdoba</option>
-                <option value="mdz">Mendoza</option>
-                <option value="er">Entre Rios</option>
-               
-            </select>  <!-- Cierre de menu desplegable -->
-            <br>
-            <br>
-            <input class="boton-borrar" type="reset" value="Borrar todo">
-            <input class="boton-borrar" type="submit" value="Enviar">
+    <h3>Forms</h3>
 
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su nombre"
+          aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su apellido"
+          aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com"
+          aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <select name="prov" id="prov">
+        <!-- Inicio de menu desplegable -->
+        <option value=" ">Provincia</option>
+        <option value="bsas">Buenos Aires</option>
+        <option value="cba">Córdoba</option>
+        <option value="mdz">Mendoza</option>
+        <option value="er">Entre Rios</option>
 
-
-
-        </fieldset>
+      </select>
+      <!-- Cierre de menu desplegable -->
+      <br>
+      <br>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
     </form>
-    <footer>Todos los derechos reservados. Camila Gonzalez</footer> 
-    <!-- Uso la etiqueta footer para hacer el pie de pagina -->
-    
+
+  </section>
+  <!-- Fin del formulario  -->
+  <footer>Todos los derechos reservados. Camila Gonzalez</footer>
+  <!-- Uso la etiqueta footer para hacer el pie de pagina -->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
