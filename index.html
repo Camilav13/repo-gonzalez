@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<title>Madart</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet"> 
@@ -11,17 +12,52 @@
 </head>
 <body class="beige"> 
     <header class="header-banner">
-            <nav class="header__navbar--principal">
-                <ul>
-                    <li><a class="boton" href="index.html">Home</a></li>
-                    <li><a class="boton" href="about.html">Sobre nosotros</a></li>
-                    <li><a class="boton" href="galeria.html">Galeria</a></li>
-                    <li><a class="boton" href="contacto.html">Contacto</a></li>
-                    <li><a class="boton" href="port.html">Enlaces</a></li>
-                    <li><a class="boton" href="maps.html">Mapa</a></li>
-                </ul>
-            </nav>
+
+            <!-- inicio de navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Madart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">Sobre mi</a>
+              </li>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                  </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="port.html">Enlaces
+                        </a>
+                      </li>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="maps.html">Mapas</a>
+                          </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- fin de navbar -->
+
     </header>
+
+    
 
     <h1>Carpinteria Madart</h1>
     <h3 class="leyenda"> El arte de innovar tu espacio</h3>
@@ -30,46 +66,40 @@
         <!-- Creo un contenedor con cada una de las secciones  -->
         <h2>Inicio</h2> <!-- Uso un h2 como titulo  -->
 
-        <table class="list">
-            <tr class="negro">  <!-- Inicio de fila --> 
-                <th>Nombre del proyecto</th>
-                <th>Arquitecta</th>
-                <th>Duración</th>
-                <th>Técnica</th>
-                <th>Observaciones</th>
-            </tr>  <!-- Cierre de fila -->
-    
-            <tr> <!-- Inicio de fila -->
-                <td class="marron">Maxinta</td>
+
+        <table class="table container p-4">
+            <thead>
+              <tr>
+                <th scope="col">Proyecto</th>
+                <th scope="col">Arquitecta</th>
+                <th scope="col">Duración</th>
+                <th scope="col">Técnica</th>
+                <th scope="col">Observaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Maxinta</th>
                 <td>Araceli Cabalotti</td>
                 <td>6 meses</td>
                 <td>Lijado</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae placeat <span class="white">accusantium velit soluta quos rerum repudiandae temporibus aut</span> , dolorem culpa inventore, veniam praesentium ab, hic consequatur quas incidunt!</td>
-                
-            </tr> <!-- Cierre de fila -->
-    
-            <tr> <!-- Inicio de fila -->
-                <td class="marron">Vibel</td class="marron">
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus animi unde tempore quas neque veritatis optio dolorum, ducimus similique quibusdam quaerat esse at, molestiae voluptatum excepturi quo natus maiores? Cupiditate?</td>
+              </tr>
+              <tr>
+                <th scope="row">Vibel</th>
                 <td>Ailin Lopez</td>
                 <td>1 año</td>
-                <td>Lijado, laqueado</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ratione delectus, a ducimus quas similique dolor quasi esse incidunt aperiam <span class="black">eaque nobis</span> at adipisci. Nostrum voluptatem eligendi nesciunt aperiam sed.</td>
-                
-            </tr> <!-- Cierre de fila -->
-
-            <tr> <!-- Inicio de fila -->
-                <td class="marron">Torres Palermo</td class="marron">
-                <td>Ailin Lopez</td>
-                <td>5 meses</td>
-                <td>Laqueado</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ratione delectus, a ducimus quas similique dolor quasi esse incidunt aperiam eaque nobis at adipisci. Nostrum voluptatem eligendi nesciunt aperiam sed.</td>
-                
-            </tr> <!-- Cierre de fila -->
-    
-            
-                
-    
-        </table>
+                <td>Lijado, Laqueado</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident animi fuga doloribus veritatis rem consectetur eligendi maxime alias qui, labore dolores voluptate numquam ducimus magnam amet illo officia praesentium!</td>
+              </tr>
+              <th scope="row">Torres Palermo</th>
+              <td>Aluminé Storino</td>
+              <td>8 meses</td>
+              <td>Lijado, Laqueado</td>
+              <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident animi fuga doloribus veritatis rem consectetur eligendi maxime alias qui, labore dolores voluptate numquam ducimus magnam amet illo officia praesentium!</td>
+            </tr>
+            </tbody>
+          </table>
         
         <h2>Quienes somos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum totam pariatur enim porro. 
