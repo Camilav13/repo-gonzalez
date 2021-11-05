@@ -385,11 +385,11 @@ footer{
 .caja3{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-}
+  }
 .caja3:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
-}
+  }
   /*------Prueba de Git-----*/
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -414,4 +414,10 @@ footer{
 .azul:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
+}
+.mushi{
+    font-style: italic;
+    background-color: rgb(116, 141, 91);
+    text-align: center;
+    margin-bottom: 3px;
 }
