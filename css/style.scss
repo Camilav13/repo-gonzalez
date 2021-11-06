@@ -389,14 +389,8 @@ footer{
 .caja3:hover{
     -webkit-transform: translate(10%);
     transform: translate(10%);
-  }
-  /*------Prueba de Git-----*/
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-=======
-=======
->>>>>>> rama_estilos
+}
+
 .prueba{
       color: #c0a683;
       font-style: oblique;
@@ -420,4 +414,10 @@ footer{
     background-color: rgb(116, 141, 91);
     text-align: center;
     margin-bottom: 3px;
+}
+
+.footer-text{
+  text-align: right;
+  color: bisque;
+  margin-right: 5px;
 }

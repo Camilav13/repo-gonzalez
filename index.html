@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Madart</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
+  <title>Madart</title>
 
 </head>
 
 <body class="beige">
   <header class="header-banner">
-
     <!-- inicio de navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
       <div class="container-fluid">
@@ -27,47 +25,41 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="about.html">Sobre mi</a>
+            </li> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
             </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                  <a class="nav-link active" aria-current="page" href="maps.html">Mapas</a>
                 </li>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                    </li>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="port.html">Enlaces
-                          </a>
-                        </li>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="maps.html">Mapas</a>
-                            </li>
-                          </ul>
-                          <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          </form>
-                        </div>
-                    </div>
+              </ul> 
+            </div>-->
+          </ul>
+        </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
     </nav>
     <!-- fin de navbar -->
-
   </header>
-
-
-
   <h1>Carpinteria Madart</h1>
   <h3 class="leyenda"> El arte de innovar tu espacio</h3>
 
   <div>
     <!-- Creo un contenedor con cada una de las secciones  -->
-    <h2>Inicio</h2> <!-- Uso un h2 como titulo  -->
+    <h2 class="titulo-galeria">Tabla de contenido</h2> <!-- Uso un h2 como titulo  -->
 
 
     <table class="table container p-4">
@@ -109,52 +101,21 @@
         </tr>
       </tbody>
     </table>
-
-    <h2>Quienes somos</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum totam pariatur enim porro.
-      Distinctio, doloribus. Laboriosam obcaecati architecto quidem porro officiis at quae laudantium repudiandae
-      praesentium quasi, beatae provident!</p>
-
-
-
-    <h2>Contacto</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum totam pariatur enim porro.
-      Distinctio, doloribus. Laboriosam obcaecati architecto quidem porro officiis at quae laudantium repudiandae
-      praesentium quasi, beatae provident!</p>
-
-    <h2>Enlaces</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum totam pariatur enim porro.
-      Distinctio, doloribus. Laboriosam obcaecati architecto quidem porro officiis at quae laudantium repudiandae
-      praesentium quasi, beatae provident!</p>
-
   </div>
+
+
+
   <footer>
-    <ul>
-      <li>
-
-        <a href="#"><i class="fab fa-facebook-f icon"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-instagram-icon"></i></a>
-      </li>
-    </ul>
-
-
-    Todos los derechos reservados. Camila Gonzalez
+    <div>
+      <a href="#"><i class="fab fa-facebook"></i></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></i></a>
+    </div>
+    
+    <p class="footer-text">Todos los derechos reservados &copy;. Camila Gonzalez</p> 
   </footer>
-  <!-- Uso la etiqueta footer para hacer el pie de pagina -->
 
 
 
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
+  <!--Scripts-->
   <script src="./js/bootstrap.min.js"></script>
 </body>

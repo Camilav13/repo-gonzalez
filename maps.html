@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madart</title>
     <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="beige">
     <header class="header-banner">
-        <nav class="header__navbar--principal">
-            <ul>
-                <li><a class="boton" href="index.html">Home</a></li>
-                <li><a class="boton" href="about.html">Sobre nosotros</a></li>
-                <li><a class="boton" href="galeria.html">Galeria</a></li>
-                <li><a class="boton" href="contacto.html">Contacto</a></li>
-                <li><a class="boton" href="port.html">Enlaces</a></li>
-                <li><a class="boton" href="maps.html">Mapa</a></li>
-            </ul>
+
+        <!-- inicio de navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Madart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">Sobre mi</a>
+                        </li>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                                </li>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page"
+                                                href="contacto.html">Contacto</a>
+                                        </li>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" aria-current="page"
+                                                                href="maps.html">Mapas</a>
+                                                        </li>
+                                                    </ul>
+                                                    <form class="d-flex">
+                                                        <input class="form-control me-2" type="search"
+                                                            placeholder="Search" aria-label="Search">
+                                                    </form>
+                                                </div>
+                                        </div>
         </nav>
-       
+        <!-- fin de navbar -->
+    </header>
     <h1>Carpinteria Madart</h1>
     <h3 class="mushi">El arte de inovar tu espacio</h3>
     <nav class="azul">Encontranos aquí</nav>
@@ -31,20 +67,21 @@
     <h2>Utilizando GitHub</h2>
     <h3>CoderHouse</h3>
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veritatis blanditiis tempore sed minima quam sit eos officia quae? Dolorum ab quis, labore nobis molestiae porro natus nesciunt id assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veritatis blanditiis tempore sed minima quam
+            sit eos officia quae? Dolorum ab quis, labore nobis molestiae porro natus nesciunt id assumenda.</p>
     </div>
-
-
-
-    <div class="">
-        <div class="">Quienes Somos</div>
-        <div class="">Nuestra trayectoria</div>
-        <div class="">Nuestro lugar</div>
-        <div class="">Nuestros proyectos</div>
-        <div class="">Nuestras técnicas</div>
-    </div>
-
-
-
+    <footer>
+        <div>
+          <a href="#"><i class="fab fa-facebook"></i></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></i></a>
+        </div>
+        
+        <p class="footer-text">Todos los derechos reservados &copy;. Camila Gonzalez</p> 
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
