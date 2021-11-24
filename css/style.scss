@@ -421,3 +421,49 @@ footer{
   color: bisque;
   margin-right: 5px;
 }
+/*---------IMAGENES------------*/
+.container-img{
+    background-color: burlywood;
+}
+.abcd{
+    width: 60rem;
+    height: 45rem;
+    border-radius: 3%;
+}
+/*----------about----------*/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header publicidad"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer";
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    height: 75vh;
+    margin: 0px;
+}
+.productos{
+    grid-area: productos;
+    background-color: orange;
+}
+header{
+    grid-area: header;
+    background-color: teal;
+}
+nav{
+    grid-area: nav;
+    background-color: yellowgreen;
+}
+aside{
+    grid-area: publicidad;
+    background-color: turquoise;
+}
+.info-about{
+    font-size: larger;
+    font-variant: small-caps;
+}
+.about-title{
+    font-size: xx-large;
