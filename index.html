@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="description=" content="Fabricamos muebles a medidaTrabajamos con maderas macizas, enchapados, laqueados al poliuretanos y melaminas.">
   <meta name="keywords" content="madera, muebles, laqueado, melamina,carpinteria">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all"> 
+  <link rel="stylesheet" href="./css/style.scss" type="text/css" media="all">
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="d:\CH\idea-gonzalez\css\style.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
@@ -15,56 +18,27 @@
 
 <body class="beige">
   <header class="header-banner">
-    <!-- inicio de navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Madart</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">Sobre mi</a>
-            </li> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
-            </li>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="maps.html">Mapas</a>
-                </li>
-              </ul> 
-            </div>-->
-          </ul>
-        </div>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-        </div>
+    <!-- Inicio Navbar-->
+    <nav class="header__navbar--principal">
+        <ul>
+            <li><a class="boton" href="index.html">Home</a></li>
+            <li><a class="boton" href="about.html">Sobre nosotros</a></li>
+            <li><a class="boton" href="galeria.html">Galeria</a></li>
+            <li><a class="boton" href="contacto.html">Contacto</a></li>
+            <li><a class="boton" href="maps.html">Enlaces</a></li>
+        </ul>
     </nav>
-    <!-- fin de navbar -->
+    <!--Fin Navbar-->
   </header>
   <h1>Carpinteria Madart</h1>
   <h3 class="leyenda"> El arte de innovar tu espacio</h3>
 
   <div>
     <!-- Creo un contenedor con cada una de las secciones  -->
-    <h2 class="titulo-galeria">Tabla de contenido</h2> <!-- Uso un h2 como titulo  -->
+    <h2 class="titulo-galeria">Trabajos realizados</h2> <!-- Uso un h2 como titulo  -->
 
 
-    <table class="table container p-4">
+    <table class="table container p-4 border-bottom-0">
       <thead>
         <tr>
           <th scope="col">Proyecto</th>
@@ -114,7 +88,7 @@
     </div>
     
     <p class="footer-text">Todos los derechos reservados &copy;. Camila Gonzalez</p> 
-  </footer>
+  </footer>    <!-- Uso la etiqueta footer para hacer el pie de pagina -->
 
 
 

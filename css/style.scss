@@ -5,7 +5,6 @@
 }
 body{
     font-family: 'Noto Sans Display', sans-serif;
-
 }
 table{ 
     background: #ac5017;
@@ -15,7 +14,6 @@ table{
     background: #F5A471;
     font-weight: bold;
 }
-
 nav {
     border: solid;
     box-shadow: black;
@@ -45,7 +43,6 @@ td{
 /*------------HEADER---------------*/
 
 .header-banner{
-
     background-color: brown;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,6 +89,9 @@ td{
 .beige{
     background-image: linear-gradient(to bottom, rgb(124, 73, 14) , rgb(216, 143, 32) , rgb(253, 222, 117) );
 }
+.body-black {
+    background-image: linear-gradient(to bottom, rgb(17, 17, 17) , rgb(48, 47, 47) , rgb(61, 60, 60));
+}
 .leyenda{
     line-height: 1rem;
     border: solid 1px rgb(155, 102, 42);
@@ -105,6 +105,10 @@ td{
     font-style: oblique;
     font-size: 20px;
     color: white;
+}
+.h-white{
+    color: rgb(197, 192, 192);
+    font-style: normal;
 }
 /*----------CONTENIDO GALERIA--------*/
 
@@ -132,9 +136,8 @@ td{
     padding: 2rem;
     float: left;
 }
-.maderas{
+/*.maderas{
     background-color: blueviolet;
-
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -142,24 +145,29 @@ td{
 }
 .maderas img{
     width: 70%;
-}
-
+}*/
 .img1{
     width: 550px;
     height: 550px;
     padding: 5px 7px 5px 5px;
 }
+.img-3876{
+    background-color: aquamarine;
+}
 .img2{
-    width: 550px;
-    height: 550px;
+    width: 30px;
+    height: 10px;
+    padding: 37px 7px 5px 5px;
+    float: right;
+    border-radius: initial;
+}
+.abcd{
+    width: 10px;
+    height: 10px;
     padding: 5px;
+    float: left;
 }
-.img3{
-    width: 550px;
-    height: 550px;
-    padding: 5px 7px 5px 37px;
-}
-/*COLUMNA DERECHA*/
+/*-----COLUMNA DERECHA-----*/
 .columna{
     background-color: peru;
     font-size: 1.1rem;
@@ -176,8 +184,20 @@ footer{
     background-color: grey;
     color: lavender;
     clear: both;
-    
+    margin: 0.5px;
+    margin-bottom: 3px;
+    width: 100%;
+    height: 45px;
 }
+.bi{
+    margin-left: 5px;
+}
+.footer-text{
+    text-align: center;
+    color: bisque;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+  }
 /*----------SOBRE NOSOTROS (FLEXBOX)--------*/
 .about-flexbox{
     display: flex;
@@ -197,146 +217,6 @@ footer{
     margin: 5px;
     padding: 25px;
     background-color: lightpink;
-}
-/*---------PORTFOLIO (GRID)--------*/
-.grid-enlaces{
-    display: grid;
-    grid-template-areas:
-    "nav header header"
-    "nav productos aside"
-    "servicios servicios aside"
-    "footer footer footer"
-    ;
-    grid-template-rows: 50px 1fr 2fr 75px;
-    grid-template-columns: 20% auto 15%;
-    margin: 2px;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    height: 100vh;
-}
-.header{
-    grid-area: header;
-    background-color: blue;
-}
-.nave{
-    grid-area: nav;
-    border: none;
-    background-color: brown;
-}
-.productos{
-    grid-area: productos;
-    background-color: crimson;
-}
-.servicios{
-    grid-area: servicios;
-    background-color: darkolivegreen;
-}
-.aside{
-    grid-area: aside;
-    background-color: cadetblue;
-}
-footer{
-    grid-area: footer;
-    background-color: chocolate;
-}
-/*-----------PORT RESPONSIVE------*/
-@media screen {
-    .header__navbar--principal{
-        grid-template-columns: 20% auto 30%;
-    }
-    .header{
-        background-color: #440e26;
-    }
-    .productos{
-        background-color: #d8196f;
-    }
-    .servicios{
-        background-color: #f05e9f;
-    }
-    .nave{
-        background-image: linear-gradient(to bottom, #fc86fcc4, #f8d9f8c4);
-    }
-    .aside{
-        background-color: rgb(134, 13, 108);
-    }
-    footer{
-        background-color: rgb(185, 12, 70);
-    }
-    .fondo-galeria{
-        background-color: rgb(219, 170, 152);
-        line-height: 1.5rem;
-        text-align: justify;
-        width: 65%;
-        font-size: 1.1rem;
-        padding: 2rem;
-        float: left;
-    }
- 
-}
-@media screen and (min-width: 768px){
-
-    .header__navbar--principal ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .header{
-        background-color: rgb(65, 146, 19);
-    }
-    .nave{
-        border: none;
-        background-image: linear-gradient(to bottom, rgb(150,238,9), rgb(208, 241, 154));
-    }
-    .productos{
-        background-color: rgb(53, 85, 15);
-    }
-    .servicios{
-        background-color: rgb(117, 161, 40);
-    }
-    .aside{
-        background-color: rgb(49, 187, 49);
-    }
-    footer{
-        background-color: rgb(30, 189, 15);
-    }
-    .fondo-galeria{
-        background-color: rgb(84, 85, 145);
-        line-height: 1.5rem;
-        text-align: justify;
-        width: 100%;
-        font-size: 1.1rem;
-        padding: 2rem;
-        float: center;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    .header__navbar--principal ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .header{
-        background-color: #320b5e;
-    }
-    .productos{
-        background-color: #2096c5;
-    }
-    .servicios{
-        background-color: #17ace7;
-    }
-    .nave{
-        background-color: #0818a8c4;
-        background-image: linear-gradient(to bottom, #0818a8c4, #6e7ae2c4)
-    }
-    .aside{
-        background-color: rgb(38, 12, 110);
-    }
-    footer{
-        background-color: rgb(57, 75, 177);
-    }
-    
 }
 
 /*---------TRANSFORMACIONES------*/
@@ -396,8 +276,8 @@ footer{
       font-style: oblique;
 }
 .azul{
-      background-color: #ece288;
-      color: brown;
+      background-color: #ecece6;
+      color: rgb(37, 17, 17);
       font-size: 25px;
       text-align: center;
       text-transform: capitalize;
@@ -411,17 +291,13 @@ footer{
 }
 .mushi{
     font-style: italic;
-    background-color: rgb(116, 141, 91);
+    background-color: rgb(226, 236, 215);
     text-align: center;
     margin-bottom: 3px;
 }
 
-.footer-text{
-  text-align: right;
-  color: bisque;
-  margin-right: 5px;
-}
-/*---------IMAGENES------------*/
+/*---------GALERIA------------*/
+
 .container-img{
     background-color: burlywood;
 }
@@ -443,7 +319,7 @@ footer{
     grid-row-gap: 10px;
     grid-column-gap: 20px;
     height: 75vh;
-    margin: 0px;
+    margin: 3px;
 }
 .productos{
     grid-area: productos;
@@ -453,17 +329,79 @@ header{
     grid-area: header;
     background-color: teal;
 }
-nav{
+.nav-respo{
     grid-area: nav;
-    background-color: yellowgreen;
+    background-color: rgb(50, 104, 205);
 }
-aside{
+.border{
     grid-area: publicidad;
     background-color: turquoise;
 }
-.info-about{
-    font-size: larger;
+.nav-about{
+    font-size: 0.90rem;
     font-variant: small-caps;
+}
+.info-about{
+    font-size: 1.2rem;
 }
 .about-title{
     font-size: xx-large;
+}
+@media screen and (max-width: 768px){
+
+.header__navbar--principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.productos{
+    background-color: #e465a5;
+}
+.nav-respo{
+    background-color: #f3b1c7c4;
+}
+.border{
+    background-color: rgb(238, 88, 125);
+}
+}
+
+@media screen and (min-width: 768px) {
+
+.header__navbar--principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.productos{
+    background-color: #08f586;
+}
+.nav-respo{
+    background-color: #79f5ccc4;
+}
+.border{
+    background-color: rgb(12, 110, 72);
+}
+footer{
+    background-color: rgb(57, 75, 177);
+}
+@media screen and (min-width: 1200px) {
+
+.header__navbar--principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.productos{
+    background-color: #515c61;
+}
+.nav-respo{
+    background-color: #808bf0c4;
+    background-image: linear-gradient(to bottom, #0875a8c4, #87b7dfc4)
+}
+.border{
+    background-color: rgb(139, 181, 194);
+}
+footer{
+    background-color: rgb(93, 93, 170);
+}
+}

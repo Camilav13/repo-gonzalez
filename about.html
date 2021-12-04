@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="description=" content="Fabricamos muebles a medidaTrabajamos con maderas macizas, enchapados, laqueados al poliuretanos y melaminas.">
     <meta name="keywords" content="madera, muebles, laqueado, melamina,carpinteria">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <title>Madart</title>
-    <link rel="stylesheet" href="css/style.scss">
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all"> 
+    <link rel="stylesheet" href="./css/style.scss" type="text/css" media="all">
+    <link rel="stylesheet" href="./css/style.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="d:\CH\idea-gonzalez\css\style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
@@ -15,50 +22,17 @@
 
 <body class="beige">
     <header class="header-banner">
-
-        <!-- inicio de navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Madart</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">Sobre mi</a>
-                        </li>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
-                                </li>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page"
-                                                href="contacto.html">Contacto</a>
-                                        </li>
-                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" aria-current="page"
-                                                                href="maps.html">Mapas</a>
-                                                        </li>
-                                                    </ul>
-                                                    <form class="d-flex">
-                                                        <input class="form-control me-2" type="search"
-                                                            placeholder="Search" aria-label="Search">
-                                                    </form>
-                                                </div>
-                                        </div>
+    <!--Inicio Navbar-->
+        <nav class="header__navbar--principal">
+            <ul>
+                <li><a class="boton" href="index.html">Home</a></li>
+                <li><a class="boton" href="about.html">Sobre nosotros</a></li>
+                <li><a class="boton" href="galeria.html">Galeria</a></li>
+                <li><a class="boton" href="contacto.html">Contacto</a></li>
+                <li><a class="boton" href="maps.html">Enlaces</a></li>
+            </ul>
         </nav>
-        <!-- fin de navbar -->
-
+    <!--Fin Navbar-->
     </header>
     <h1 class="azul">Conocenos un poco mas</h1>
 
@@ -70,7 +44,7 @@
             <h5>¿Qué hacemos?</h5>
         </div>
         <div class="transf">
-            <h5>Tecnicas y productos</h5>
+            <h5>Técnicas y productos</h5>
         </div>
     </div>
 
@@ -80,9 +54,9 @@
             <p class="info-about">Esta empresa familiar comienza en el año 1960 con la llegada de Victor Gonzalez, quien llegó a la Argentina desde España y comenzó a asentar, junto a sus 4 hermanos, las bases de lo que en su momento fue, un pequeño taller de carpintería ubicado en el garage de una casa. Mucho tiempo despues, Carlos (hijo de Victor) decidio unirse a su papa y sus tios, tomando sus conocimientos para continuar en el mundo de la carpintería, ampliando sus tecnologías, estructura, maquinaria y capacitándose constantemente para estar al día de las actualizaciones del interiorismo moderno.</p>
         </section>
 
-        <nav>
+        <nav class="nav-respo">
             <h5 class="about-title">¿Qué hacemos?</h5>
-            <p class="info-about">Fabricamos muebles a medida adaptados al espacio, necesidad y gusto de cada cliente.
+            <p class="nav-about">Fabricamos muebles a medida adaptados al espacio, necesidad y gusto de cada cliente.
                 Durante más de 60 años, junto a diseñadores y arquitectos, interpretamos el diseño, la funcionalidad y el uso de cada pieza que nuestros clientes necesitan. Hoy surgen nuevas ideas, nuevos proyectos, un avance importante en la firma, una actualización en su nombre para salir al mercado más firmes que nunca.
                 Con los mismos valores, compromiso, responsabilidad y la misma entrega de siempre.
                 El producto final se destaca por la creatividad, calidad y la calidez con que se conjugan las líneas. Nuestros productos no serían los mismos, sin materia prima de 1º calidad.</p>
@@ -98,6 +72,10 @@
         <div>
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> 
+
+            </svg>
         </div>
 
         <p class="footer-text">Todos los derechos reservados &copy;. Camila Gonzalez</p>
